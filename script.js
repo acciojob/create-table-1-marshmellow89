@@ -1,7 +1,5 @@
 function insert_Row(){
-	const ST = document.querySelector("#sampleTable");
-
-	for(let i=1;i<=1;i++){
+	const ST = document.querySelector("#sampleTable"); 
 		const tr = document.createElement("tr");
 
 		for(let j=1;j<=2;j++){
@@ -10,5 +8,5 @@ function insert_Row(){
 			tr.appendChild(td);
 		}
 		ST.insertBefore(tr, ST.firstChild);
-	}
+	
 }
