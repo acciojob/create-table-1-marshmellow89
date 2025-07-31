@@ -9,6 +9,6 @@ function insert_Row(){
 			td.textContent = `New Cell${j}`;
 			tr.appendChild(td);
 		}
-		ST.appendChild(tr);
+		ST.insertBefore(tr, ST.firstChild);
 	}
 }
