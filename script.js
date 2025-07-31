@@ -1,13 +1,14 @@
-const clcbutton=document.getelementbytype('button');
-const newtd=document.getelementbyid('newtd')
-clcbutton.addeventlistener('click',function insert_Row() {
-	const newrow=document.createelement('tr');
-	newrow.innerhtml="<tr><td>New Cell1</td><td>New Cell1</td>";
-	newtd.appendchild('newrow')
-	
-})
+function insert_Row(){
+	const ST = document.querySelector("#sampleTable");
 
+	for(let i=1;i<=1;i++){
+		const tr = document.createElement("tr");
 
-  
-  
+		for(let j=1;j<=2;j++){
+			const td = document.createElement("td");
+			td.textContent = `New cell${j}`;
+			tr.appendChild(td);
+		}
+		ST.appendChild(tr);
+	}
 }
